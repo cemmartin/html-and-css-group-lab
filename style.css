@@ -8,6 +8,10 @@ a {
     color: royalblue;
 }
 
+section {
+    padding: 0px 30px;
+}
+
 body>header {
     background-color: black;
     color: white;
@@ -50,8 +54,17 @@ section>ul {
     font-weight: bold;
 }
 
+
 footer {
     grid-area: footer;
+}
+
+footer>h2 {
+    padding: 0px 30px;
+}
+
+footer>p {
+    padding: 0px 30px;
 }
 
 #grid-container {
