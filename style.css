@@ -1,3 +1,5 @@
+
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -6,29 +8,43 @@ body {
 body>header {
     background-color: black;
     color: white;
-    padding: 16px;
+    padding: 5px 30px 0px 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     grid-area: header;
+    align-items: center;
 }
 
 body>header>nav>ul {
     display: flex;
     justify-content: flex end;
     flex-direction: row;
-    gap: 20px;
-    
+    gap: 40px;
+    list-style-type: none;
 }
 
 main>header {
     background-color: royalblue;
     color: white;
-    padding: 16px;
+    padding: 10px 30px;
 }
 
-#best {
-    font-weight: lighter;
+section>ul {
+    list-style-type: none;
+}
+
+#logo {
+    height: 40px;
+    justify-content: flex-start;
+}
+
+#searchlogo {
+    height: 20px;
+}
+
+#slogan {
+    font-weight: bold;
 }
 
 article {
@@ -43,8 +59,36 @@ footer {
 #grid-container {
     display: grid;
     grid-template-areas: 
-        'header header header'
-        'article article article'
-        'footer footer footer';
-    grid-template-columns: 15fr 70fr 15fr;
+        'benefits births business'
+        'chidlcare citizens crime';
+    list-style-type: none;
+}
+
+#benefits {
+    grid-area: benefits;
+}
+
+#births {
+    grid-area: births;
+}
+
+#business {
+    grid-area: business;
+}
+
+#childcare {
+    grid-area: childcare;
+}
+
+#citizens {
+    grid-area: citizens;
+}
+
+#crime {
+    grid-area: crime;
+}
+
+
+#gif {
+    width:100%;
 }
